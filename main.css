@@ -1,0 +1,479 @@
+@import url("https://use.typekit.net/yde1sdm.css");
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px green solid; */
+}
+
+:root{
+    --primary-color : #458FF6;
+    --text-primary : #FFFFFF;
+    --text-secondary : #000000;
+    --text-third : #7D7987;
+    --text-fourth : #4089ED;
+    --nav-text : #1F1534;
+    --nav-bg : #e2e0e0;
+}
+.body-text{
+    font-family: "Muli", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 17px;
+    color: var(--text-third);
+    line-height: 30px;
+}
+.heading-style{
+    font-family: "MUli", sans-serif;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-align: center;
+}
+.container{
+    padding: 0px 0px;
+    width: 1100px;
+    max-width: 100%;
+    margin: 10px auto;
+    margin-bottom: 150px;
+}
+/* Resuable  class */
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Nvbar  */
+.navbar{
+    height: 80px;
+    border-radius: 5px;
+}
+.logo img{
+    width: 160px;
+    height: 41px;
+}
+.navbar .menu ul{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    align-items: center;
+}
+.menu ul li{
+    list-style-type: none;
+    font-family: "muli", sans-serif;
+    font-weight: 400;
+    color: var(--nav-text);
+}
+.menu ul li.active{
+    color: var(--text-secondary);
+    font-weight: bold;
+}
+.menuicon{
+    display: none;
+}
+/* hero section */
+.hero{
+    width: 100%;
+}
+.heading{
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+}
+.heading h1{
+    font-size: 48px;
+    line-height: 56px;
+}
+.hero-img img{
+    width: 100%;
+    height: 100%;
+}
+.head-btn{
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 55px;
+    border: none;
+    font-size: 18px;
+    color: var(--text-primary);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    margin-top: 43px;
+}
+/* service */
+.service{
+    flex-direction: column;
+    text-align: center;
+}
+.divider {
+    width: 56px;
+    height: 2px;
+    background-color: #000; /* Black color for the line */
+    margin: 10px auto;
+    border: none;
+  }
+.divider-start {
+    width: 56px;
+    height: 2px;
+    background-color: #000; /* Black color for the line */
+    margin: 10px 0;
+    border: none;
+}
+.service-text{
+    width: 952px;
+    height: 60px;
+    text-align: center;
+    font-family: "MUli", sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    color: var(--text-third);
+}
+.service-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+.service-detail{
+    flex: 0 1 calc(33.33% - 10px); 
+    min-height: 100%;
+    box-sizing: border-box; 
+    background-color: #fff; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 10px 20px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 12px 0px;
+    padding: 12px 5px;
+    gap: 10px;
+    p {
+        text-align: start;
+    }
+}
+.service-img{
+    display: flex;
+}
+.service-info-head{
+    display: flex;
+}
+.service-info-description p{
+    text-align: start;
+}
+.btn{
+    width: 216px;
+    height: 61px;
+    padding: 0 13px;
+    border-radius: 55px;
+    border: none;
+    font-size: 18px;
+    color: var(--text-primary);
+    border: 1px solid var(--primary-color);
+    background-color: white;
+    cursor: pointer;
+    margin: 23px 0;
+    font-family: "Mulish", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+/* leading health care */
+.leading-box{
+    width: 100%;
+    gap: 25px;
+}
+.healthcare-img {
+    min-width: 544px;
+    height: 477px;
+    padding: 3px;
+}
+.healthcare-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.healthcare-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.app-box{
+    width: 100%;
+    gap: 25px;
+    flex-direction: row-reverse;
+}
+.icon{
+    color: var(--primary-color);
+}
+/* Review */
+.review-box{
+    min-height: 421px;
+    background: linear-gradient(to left, #67C3F3, #5A98F2);
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 24px;
+}
+.review-info{
+    display: flex;  
+    padding: 10px 25px;
+}
+.review-user-profile{
+    width: 50%;
+    gap: 25px;
+}
+.review-user-info{
+    flex-direction: column;
+    gap: 15px;
+}
+.review-user-info h2{
+    color: var(--text-primary);
+}
+.review-user-info p{
+    color: var(--text-primary);
+}
+.review-description{
+    width: 50%;
+    color: var(--text-primary);
+}
+.review-description p{
+    line-height: 30px;
+}
+.review-controls {
+    gap: 25px;
+    margin-top: 34px;
+}
+.control-btn {
+    background: none;
+     border: none;
+    color: rgb(41, 147, 235);
+    font-size: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out; 
+}
+.control-btn:hover {
+    opacity: 0.7;
+}
+.dots {
+    gap: 8px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    background: rgb(146, 200, 231);
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+}
+.dot.active {
+    background: #61b1f3; /* Gold color for active dot */
+    width: 12px;
+    height: 12px;
+}
+/* blog section */
+.blog-header h2{
+    text-align: center;
+}
+.blogs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    width: 100%;
+    margin-top: 59px;
+}
+.blog{
+    flex: 0 1 calc(33% - 10px);
+    min-height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    background-color: var(--card-bg);
+    flex-direction: column;
+    align-items: flex-start;
+}
+.blog-text{
+    margin-top: 45px;
+    padding: 0 17px;
+}
+.blog-text h3{
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+}
+.blog-text p{
+    font-family: "Mulish", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 28px;
+    color: var(--text-third);
+}
+.blog-read-more{
+    padding: 0 17px;
+    margin: 36px 0;
+    color: var(--text-fourth);
+}
+/* footer */
+.footer {
+  background: linear-gradient(180deg, #67C3F3 0%, #5A98F2 100%);
+  color: white; /* White Text */
+  padding: 40px 80px;
+}
+.footer-box {
+  gap: 61px;
+}
+.logo{
+    max-width: 391px;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+.logo p{
+    font-family: "Mulish", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+.options{
+    display: flex;
+    gap: 65px;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li{
+    font-family: "Mulish", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 38px;
+}
+.footer ul li:first-child{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 60px;
+}
+/* Responsive Desing */
+@media screen and (max-width: 1024px) {
+    
+    .container{
+        width: 90%;
+        padding: 0px;
+    }
+    .navbar {
+        height: 70px;
+        padding: 0 15px;
+      }
+      .navbar .menu ul {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: 0px;
+        left: 0px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .navbar .menu ul.toggle-menu {
+        display: flex; 
+    }
+    .menuicon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .blogs, .blog{
+        justify-content: space-evenly;
+    }
+    .healthcare-img{
+        min-width: 455px;
+    }
+    .review-user-profile{
+        flex-direction: column;
+    }
+    .review-user-info{
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-image: url('./assets/heroimg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hero-img{
+        display: none;
+    }
+    .heading {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.6); /* Optional: Add background for readability */
+        height: 50vh;
+    }
+    .service-detail{
+        flex: 1 1 calc(50% - 10px);
+    }
+    .healthcare-img{
+        display: none;
+    }
+    .leading-box{
+        background-image: url('./assets/leading.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .healthcare-info{
+        height: 50vh;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.6);
+    }
+    .app-box{
+        background-image: url('./assets/app.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .review-info{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        align-items: center;
+
+    }
+    .review-description{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-box{
+        flex-direction: column-reverse;
+    }
+    .options{
+        justify-content: space-between;
+    }
+    .logo{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .service-detail{
+        flex: 1 1 100%;
+    }
+    .options{
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}
